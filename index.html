@@ -8,64 +8,87 @@
   <style>
     body {
       margin: 0;
+      padding: 0 5vw;
       font-family: 'Inter', sans-serif;
       background: linear-gradient(to bottom, #0A0A0A, #002B36);
       color: #DDDDDD;
-      padding: 20px;
+      line-height: 1.6;
     }
+
     header {
       text-align: center;
-      padding-bottom: 20px;
+      padding: 40px 0 20px;
     }
+
+    .icon {
+      width: 180px;
+      max-width: 80%;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 0 8px #00FFD180);
+    }
+
     h1 {
       font-family: 'Orbitron', sans-serif;
       color: #00FFD1;
       font-size: 28px;
+      margin-bottom: 10px;
     }
+
+    .divider {
+      height: 2px;
+      width: 80px;
+      background-color: #00FFD1;
+      opacity: 0.3;
+      margin: 0 auto 30px;
+    }
+
     h2 {
       font-family: 'Poppins', sans-serif;
       color: #FF416C;
       font-size: 20px;
-      margin-top: 30px;
+      margin-top: 32px;
+      margin-bottom: 10px;
     }
-    p {
-      font-size: 15px;
-      line-height: 1.6;
-      margin-top: 12px;
+
+    p, li {
+      font-size: 16px;
+      margin-bottom: 12px;
     }
-    .divider {
-      margin: 30px auto;
-      width: 80px;
-      height: 2px;
-      background: #00FFD1;
-      opacity: 0.4;
+
+    ul {
+      padding-left: 20px;
     }
+
     .highlight {
       color: #00FFD1;
       font-weight: 500;
     }
+
     footer {
-      margin-top: 40px;
+      margin: 40px 0 20px;
       text-align: center;
       font-size: 13px;
       color: #888;
     }
-    .icon {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
-  margin-bottom: 8px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      p, li {
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <img src="./assets/1.png" alt="GemEntry Icon" class="icon" />
-
     <h1>Privacy Policy</h1>
     <div class="divider"></div>
   </header>
@@ -98,22 +121,22 @@
 
   <section>
     <h2>4. Third-Party Services</h2>
-    <p>GemEntry may use third-party tools for services like analytics and ads (e.g., Google AdMob), which may collect anonymous usage data for personalization and reporting.</p>
+    <p><span class="highlight">GemEntry</span> may use third-party tools (e.g., Google AdMob) to serve ads and monitor performance. These tools may collect anonymized usage data and device insights.</p>
   </section>
 
   <section>
     <h2>5. Data Security</h2>
-    <p>We use modern security practices to protect your information. All sensitive entries are stored locally or securely encrypted with no public access.</p>
+    <p>We take your security seriously. All sensitive data is stored locally or encrypted. We do not share user data with third parties beyond services mentioned above.</p>
   </section>
 
   <section>
     <h2>6. Your Rights</h2>
-    <p>You may request to edit or delete your data at any time. Simply go to your <span class="highlight">Profile</span> in the app or contact our support team.</p>
+    <p>You may request to view, edit, or delete your data anytime. Visit your <span class="highlight">Profile</span> settings in the app or contact support for assistance.</p>
   </section>
 
   <section>
     <h2>7. Updates</h2>
-    <p>This policy may be updated in the future. We’ll notify you in-app of any material changes.</p>
+    <p>This policy may be updated to reflect changes in law or features. Any major changes will be notified in-app.</p>
   </section>
 
   <footer>
